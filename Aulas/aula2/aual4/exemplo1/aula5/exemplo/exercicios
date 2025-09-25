@@ -1,0 +1,11 @@
+
+const idade = prompt("qual e a sua idade?")
+
+console.log(typeof (idade) )
+const idadeNumber = Number(idade)
+//Number() conversor de string para number
+console.log(typeof(idadeNumber))
+//tostring conversor de number para string
+const idadeTexto = idadeNumber.toString()
+console.log(typeof(idadeTexto))
+
