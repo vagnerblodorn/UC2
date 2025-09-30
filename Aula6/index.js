@@ -27,10 +27,36 @@ console.log(a,b,c)
 let horasDias = prompt("Quantas horas voce trabalha por dia?")
 let recebimentoDiario = prompt("Quantos voce recebe por dia?")
 console.log("voce recebe", recebimentoDiario, "/", horasDias, "por hora")
-/* o prompt serve para fazer um pergunta, e o T,P servem para imdentificar as perguntas e isso e o que vai aparecer no output isso vai imprimir os recebimentoDiario e o horasDias */
+/* o prompt serve para fazer um pergunta, e o T,P servem para imdentificar as perguntas e isso e o que vai aparecer no output isso vai imprimir os recebimentoDiario e o horasDias 
+
 
 let nome 
 let idade 
 
-console.log(typeof(nome), typeof(idade)) //isso aconteceu porque nao tem nada atribuido na variavel //
+console.log(typeof(nome), typeof(idade)) //isso aconteceu porque nao tem nada atribuido na variavel 
+
+let estaUsandoCalca = prompt("voce esta usando calca?")
+let usandoCasaco = prompt("voce esta usando casaco?")
+let usandoCueca = prompt("voe esta usando cueca?")
+
+console.log ("voce esta usando calca?", estaUsandoCalca)
+console.log ("voce esta usando casaco?", usandoCasaco)
+console.log ("voce esta usando cueca?", usandoCueca) 
+
+
+let a = 10
+let b = 25
+c = b
+b = a
+a = c
+console.log(a,b,c)
+
+// depoir de trocarmos teremos os seguntes resultados:
+console.log("O novo valor de a é", a) // O novo valor de a é 25
+console.log("O novo valor de a é", b) // O novo valor de b e 10 */
+
+
+
+
+
 
