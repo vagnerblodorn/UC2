@@ -10,7 +10,7 @@
 
 //console.log(resultado)
 
-const primeiroValor = 10
+/*const primeiroValor = 10
 const segundoValor = 25
 const novoResultado = primeiroValor / segundoValor
 console.log(novoResultado)
@@ -27,5 +27,39 @@ resultadoSimples = resultadoSimples -30
 console.log(resultadoSimples)
 resultadoSimples *= 2
 console.log(resultadoSimples)
+
+let resultadoSimples = 3
+
+resultadoSimples +=4
+console.log(resultadoSimples)
+
+let resultadoSimples = 3 
+resultadoSimples *=5
+console.log(resultadoSimples)
+resultadoSimples = resultadoSimples / 2
+console.log(resultadoSimples)
+
+let resultadoSimples = 5 
+resultadoSimples -=4
+console.log(resultadoSimples)
+resultadoSimples = resultadoSimples *-1
+console.log(resultadoSimples)*/
+
+const primeiroValor = 234
+const segundoValor = 5
+console.log(primeiroValor%segundoValor) 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
