@@ -30,3 +30,5 @@ console.log("pode vencer?", podeVencer, "O risco é alto?", riscoAlto, "A batalh
 
 
 
+
+
