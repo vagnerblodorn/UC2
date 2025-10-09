@@ -32,20 +32,20 @@ const anosAtual = prompt("tem quantos anos no futuro até 2050?")
 console.log("Nome:", nomePessoa)
 console.log("idade:", idadePessoa)
 console.log("aqui irei indicar que voce e maior de idade:", - ano >= 18)
-console.log("quantos anos futuro:", anosFuturo)*/
+console.log("quantos anos futuro:", anosFuturo)
 
 const bool1 = true
 const bool2 = false 
 const bool3 = !bool2
 
 let resultado = bool1 && bool2
-console.log("a. ", resultado)
+console.log("a. ", resultado) false 
 
 resultado = bool1 && bool2 && bool3
-console.log("b. ", resultado)
+console.log("b. ", resultado)false
 
 resultado = !resultado && (bool1 || bool2)
-console.log("c. ", resultado)
+console.log("c. ", resultado) true 
 
 console.log("d. ", typeof resultado)
 
@@ -55,13 +55,5 @@ let primeiroNumero = prompt("digite um numero!")
 let segundoNumero = prompt("digite outro numero!")
 
 const soma = primeiroNumero + segundoNumero
-console.log(soma)
-
-//
-
-
-
-
-
-
+console.log(soma) // para resolver esse problema nos precisamos botar as variaveis em numbers // 
 
