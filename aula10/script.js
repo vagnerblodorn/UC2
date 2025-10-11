@@ -176,13 +176,14 @@ arrayVazio.push(tarefa1,tarefa2,tarefa3)
 const tarefasFeitas = prompt("escolha uma tarefa feita, 0,1 ou 2")
 arrayVazio.splice(tarefasFeitas, 1)
 
-console.log(arrayVazio)*/
+console.log(arrayVazio)
 
 let frutas = ["Banana", "Morango", "abacaxi", "laranja", "ameixa"]
 let indiceDoAbacaxi = frutas.indexOf("abacaxi")
 let tamanhoDaArray = frutas.length
 console.log("indice de abacaxi:", indiceDoAbacaxi)
 console.log("Tamanho do array de frutas:", tamanhoDaArray)
+
 
 
 
