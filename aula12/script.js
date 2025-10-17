@@ -74,7 +74,7 @@ switch(paisOrigem){
             default : 
             console.log("Nacionalidade nao encontrada")
             break
-}*/
+}
 
 let pokemon = prompt("digite seu pokemon")
 switch(pokemon){
@@ -93,6 +93,35 @@ switch(pokemon){
             default : 
             console.log("pokemon nao encontrado")
             break
+            }*/
+
+            let HarryPoter = prompt("digite um personagem de Harry Potter")
+switch(HarryPoter){
+    case 'Hermione' :
+        console.log("Hermione(Grifinória)")
+        console.log("entrou na case1")
+        break
+        case 'Ana' :
+            console.log("Ana(Lufa-lufa)")
+            console.log("entrou na case2")
+            break
+            case 'Luna' : 
+            console.log("Luna(Cornival)")
+            console.log("entrou na case3")
+            break
+            case 'Narcisa' :
+            console.log("Narcisa(Sonserina)")
+            console.log("entrou na case4")
+            break
+            default : 
+            console.log("Aluno nao encontrado")
+            break
             }
+
+            
+           
+
+
+        
 
 
