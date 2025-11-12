@@ -112,9 +112,10 @@ const profssores = [
     {nome : "dal", modulo : 1 },
     {nome : "valter", modulo : 1}
 ]
-console.log("O professor:", profssores [0].nome, " deu o modulo:", profssores[0].modulo)*/
+console.log("O professor:", profssores [0].nome, " deu o modulo:", profssores[0].modulo)
 
 
+// exercicio da aula passada //
 const filme = {
     direcao : "marcos siega " ,
     nome : "dexter" ,
@@ -130,8 +131,30 @@ console.log(filme.nome)
 console.log(filme.lancamento)
 console.log(filme.lista)
 console.log(filme.lista2)
-console.log(filme.jaOlhei)
+console.log(filme.jaOlhei) 
 
+const amigo ={
+    Nome :"Leomar",
+    Idade :17,
+    comida :   ['sushi','churrasco','pipoca'],
+        melhorAmigo : {
+       nome : "Vagner",
+       idade : 17,
+        }
+}
+console.log("O nome da pessoa é:", amigo.Nome , "e suas comidas preferidas sao:", amigo.comida[0,1,2], )
+console.log (amigo.melhorAmigo)*/
 
+const personagens = [
+    {personagem : "Sasuke", idade : 17, estilo : "Nimjutso", jutsus : ["bola de fogo", "chidori", "amaterasu"]},
+    {personagem : "Naruto", idade : 17, estilo : "Ninjutsu", jutsus : ["resengan", "harém", "mil clones das sombras"]},
+    {personagem : "Obito", idade : 30, estilo : "Ninjutsu", jutsus : ["bola de fogo", "kamui"]}
+  ]
+  
+  function adicionarPersonagem () {
+    console.log(personagens.adicionarPersonagem)
+    personagens.push{personagens}
+  }
 
+  
 
