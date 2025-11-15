@@ -143,7 +143,7 @@ const amigo ={
         }
 }
 console.log("O nome da pessoa é:", amigo.Nome , "e suas comidas preferidas sao:", amigo.comida[0,1,2], )
-console.log (amigo.melhorAmigo)*/
+console.log (amigo.melhorAmigo)
 
 const personagens = [
     {personagem : "Sasuke", idade : 17, estilo : "Nimjutso", jutsus : ["bola de fogo", "chidori", "amaterasu"]},
@@ -151,10 +151,73 @@ const personagens = [
     {personagem : "Obito", idade : 30, estilo : "Ninjutsu", jutsus : ["bola de fogo", "kamui"]}
   ]
   
-  function adicionarPersonagem () {
-    console.log(personagens.adicionarPersonagem)
-    personagens.push{personagens}
+  function adicionarPersonagem (perso) {
+    personagens.push(perso)
+    console.log("O personagem ${perso foi adicionado")
   }
+   const personagem = {
+    nome:"Lee",
+    idade:17,
+    estilo:"taijustu"
+    jutsus:["lótus","vendaval"]
+   }
+   adicionarPersonagem(personagem)
+
+   function buscarPersonagem(nomeBuscado){
+function personagem(perso){
+    return perso.nome.toLowerCase()=== nomeBuscado.toLowerCase()
+}
+const personagemEncontrado = personagem.find.(personagem)
+if (personagemEncontrado){
+
+    return personagemEncontrado;
+}else {
+    return `Personagem com nome "${nomeBuscado}" nao encontrado, `;
+}
+} */
+
+const filme = {
+    nome: "Auto da copadecida",
+    ano:2000,
+    elenco: [
+        "matheus nachtergaele", "selton mello", "cenise fraga", "virginia cavendish"
+    ],
+    transmissoesHoje: [
+        {canal:"telecine", horarios: "21h"},
+        {canal:"canal brasil", horarios: "19h"},
+        {canal: "globo", horarios: "14h"}
+    ]
+}
+console.log(filme.elenco[0])
+console.log(filme.elenco[filme.elenco.length -1])
+console.log(filme.transmissoesHoje[2])
+//o primeiro console.log vai imprimir o primeiro indice que e 0(matheus nachtergaele).//
+//o segundo console.log vai imprimir a virginia cavendish porque ele vai pegar um que nao tenha e vai pegar o indice 3//
+// o console.log vai pegar o indice 2 que e o (globo e horarios 14h)//
+
+const cachorro = {
+    nome: "Juca",
+    idade: 3,
+    raca: "SRD"
+}
+
+const gato = {...cachorro, nome: "juba"}
+
+const tartaruga = {...gato, nome:gato.nome.replaceAll("a", "o")}
+
+console.log(cachorro)
+console.log(gato)
+console.log(tartaruga)
+
+  // o primeiro console.log imprimi exatamente a ,esma coisa que esta escrito na variavel//
+  // 
+
+  //exemplo de entrada
+  const pessoa ={
+    nome: "vagner blodorn",
+    apelidos:["bombadinho", "vaguinho", "vava"]
+  }
+  // exemplo de saida 
+  "eu sou lucas, mas pode me chamar de :"
 
   
-
