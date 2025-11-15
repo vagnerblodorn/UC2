@@ -1,66 +1,67 @@
-const personagens = [
-    {personagem : "Legolas", classe :"Ranger",nivel: 12, hp : 108, habilidades : ["Forca","Carisma","Destreza"], historicoDeAcoes : "Ajudou a formar a sociedade do anel para destruir o Um Anel"},
-    {personagem : "Boromir", classe : "fighter",nivel:11, hp : 132, habilidades : ["defesa com escudo","ataque extra","lideranca de batalha"], historicoDeAcoes:"tornou-se membro da sociedade do Anel"},
-    {personagem : "Gimli", classe : "barbarian", nivel:12, hp:148, habilidades : ["pele grossa como pedra","ataque poderoso","tenacidade de ferro"], historicoDeAcoes :"travou competicoes amistosas Legolas para ver quem abatia mais inimigos"},
+//criando um array de objetos
+let personagens = [
+    {nome: "Legulas", 
+    classe: "Ranger",
+    nivel: 12,
+    pontosDeVida: 108,
+    habilidades: ["Força","Carismo","Destreza"],
+    historicoDeAcoes: []},
 
+    {nome: "Boromir",
+    classe: "Fighter",
+    nivel:11,
+    pontosDeVida: 132,
+    habilidades: ["Defesa com escudo","Ataque extra","Liderança em batalha"],
+    historicoDeAcoes: []},
+
+    {nome: "Gimli",
+    classe: "Barbarian",
+    nivel: 12,
+    pontosDeVida: 148,
+    habilidades: ["Pele grossa como pedra","Ataque poderoso","Tenacidade de ferro"], 
+    historicoDeAcoes: []} //criei um array para armazenar o historico de acoes.
 ]
 
-const legolas = {
-    nome: "Legolas",
-    classe: "Patrulheiro",
-    nivel: 12,
-    hp: 108,
-    habilidades: ["Tiro Preciso", "Ataque Duplo"],
-    historicoAcoes: []
-};
-
-const boromir = {
-    nome: "Boromir",
-    classe: "Guerreiro",
-    nivel: 11,
-    hp: 132,
-    habilidades: ["Liderança de Batalha"],
-    historicoAcoes: []
-};
-
-const gimli = {
-    nome: "Gimli",
-    classe: "Anão Guerreiro",
-    nivel: 12,
-    hp: 148,
-    habilidades: ["Fúria Anã"],
-    historicoAcoes: []
-};
-
-function atacar(atacante, alvo, dano) {
-    alvo.hp -= dano;
-    const texto = atacante.nome + " atacou " + alvo.nome + " causando " + dano + " de dano.";
-    atacante.historicoAcoes.push(texto);
-    console.log(texto);
+function atacar(atacador, alvo, dano){
+    alvo.pontosDeVida -= dano
+    const texto = atacador.nome + " atacou " + alvo.nome + " causando " + dano + " de dano."
+    atacador.historicoDeAcoes.push(texto)//enviando para o historico de acoes do personagem(usando push)
+    console.log(texto)//console.log para imprimir
 }
 
-function defender(personagem) {
-    const texto = personagem.nome + " está defendendo.";
-    personagem.historicoAcoes.push(texto);
-    console.log(texto);
+function defender(perso){
+    const texto2 = perso.nome + " está se defendendo."
+    perso.historicoDeAcoes.push(texto2)
+    console.log(texto2)
 }
-
-function usarHabilidade(personagem, habilidade) {
-    if (!personagem.habilidades.includes(habilidade)) {
-        console.log(personagem.nome + " não tem essa habilidade.");
-        return;
+//if(se) para verificar se possui a habilidade ou não
+function usarHabilidade(personage, habilidade){
+    if(!personage.habilidades.includes(habilidade)) {
+        console.log(personage.nome + " não possui esta habilidade!")
+        return
     }
-
-    const texto = personagem.nome + " usou " + habilidade + ".";
-    personagem.historicoAcoes.push(texto);
-    console.log(texto);
+    const texto3 = personage.nome + " usou a " + habilidade + "."
+    personage.historicoDeAcoes.push(texto3)
+    console.log(texto3)
+}
+//cria uma função
+function buscarPersonagem(nome){
+    const personagem = personagens.find(person => person.nome.toLowerCase() === nome.toLowerCase())
+    if(personagem){
+        console.log(personagem)
+        return personagem
+    } else {
+        console.log("Personagem não encontrado!")
+        return null
+    }
+}
+function excluirPersonagem(nome) {
+        delete personagens[nome]
+        nome.toLowerCase()
 }
 
-atacar(legolas, gimli, 12);
-usarHabilidade(gimli, "Fúria Anã");
-defender(boromir);
-atacar(gimli, legolas, 18);
-
-console.log("Histórico do Legolas:", legolas.historicoAcoes);
-console.log("Histórico do Gimli:", gimli.historicoAcoes);
-console.log("Histórico do Boromir:", boromir.historicoAcoes);
+//aqui estou chamando a função
+atacar(personagens[0], personagens[2], 22)
+defender(personagens[2]);
+usarHabilidade(personagens[1], "Liderança em batalha para ajudar",personagens[2])
+buscarPersonagem("Legulas")
